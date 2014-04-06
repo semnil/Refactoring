@@ -313,37 +313,37 @@ static int s_nokori = 30 * 5;
 }
 
 - (void)タイマーメソッド1 {
-    unsigned long val = arc4random();
+    unsigned int val = arc4random();
     int val2 = 0;
 
     if (s_nokori <= 0)
         return;
 
-    if (val < ULONG_MAX / 14)
+    if (val < UINT_MAX / 14)
         val2 = 1;
-    else if (val < ULONG_MAX / 14 * 2)
+    else if (val < UINT_MAX / 14 * 2)
         val2 = 2;
-    else if (val < ULONG_MAX / 14 * 3)
+    else if (val < UINT_MAX / 14 * 3)
         val2 = 3;
-    else if (val < ULONG_MAX / 14 * 4)
+    else if (val < UINT_MAX / 14 * 4)
         val2 = 4;
-    else if (val < ULONG_MAX / 14 * 5)
+    else if (val < UINT_MAX / 14 * 5)
         val2 = 5;
-    else if (val < ULONG_MAX / 14 * 6)
+    else if (val < UINT_MAX / 14 * 6)
         val2 = 6;
-    else if (val < ULONG_MAX / 14 * 7)
+    else if (val < UINT_MAX / 14 * 7)
         val2 = 7;
-    else if (val < ULONG_MAX / 14 * 8)
+    else if (val < UINT_MAX / 14 * 8)
         val2 = 8;
-    else if (val < ULONG_MAX / 14 * 9)
+    else if (val < UINT_MAX / 14 * 9)
         val2 = 9;
-    else if (val < ULONG_MAX / 14 * 10)
+    else if (val < UINT_MAX / 14 * 10)
         val2 = 10;
-    else if (val < ULONG_MAX / 14 * 11)
+    else if (val < UINT_MAX / 14 * 11)
         val2 = 11;
-    else if (val < ULONG_MAX / 14 * 12)
+    else if (val < UINT_MAX / 14 * 12)
         val2 = 12;
-    else if (val < ULONG_MAX / 14 * 13)
+    else if (val < UINT_MAX / 14 * 13)
         val2 = 13;
     else
         val2 = 14;
